@@ -1,0 +1,56 @@
+{% extends 'root.html' %}
+
+{% block head %}
+
+
+{% endblock%}
+{% block body%}
+<body>
+    <header>
+        <div class="mylogo">
+            <img src="{{url_for('static', filename = 'sam_logo.png') }}" width="50" height="50" alt="sam's logo">
+        </div>
+
+        <button class="nav-btn" aria-label="nav-button">
+            <span class="btn"></span>
+        </button>
+
+        <nav class="mynav">
+            <ul class="mynav_ls">
+                <li class="mynav_item"> <a href="#home" class="mynav_link">Home</a></li>
+                <li class="mynav_item"> <a href="#skills" class="mynav_link">Creative Styles</a></li>
+                <li class="mynav_item"> <a href="#about" class="mynav_link">About Me</a></li>
+                <li class="mynav_item"> <a href="#projects" class="mynav_link">Art Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="mycontact" id="contact" action="" method="post">
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name="lastname"><br>
+            Email: <input type="email" name="email"><br> 
+          Message: <input type="textarea" name="message"><br>
+                   <input type="submit" value="Submit">
+    </form>
+
+    <footer class="footer">
+        <!--insert your own here-->
+        <a href="mailto:fort.smg@gmail.com" class="footer_link">fort.smg@gmail.com</a>
+
+        <ul class="social_links">
+            <li class="socialitem">
+                <a class="socialitemlink" href="https://twitter.com"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li class="socialitem">
+                <a class="socialitemlink" href="https://facebook.com"><i class="fab fa-facebook-square"></i> Facebook</a>
+            </li>
+            <li class="socialitem">
+                <a class="socialitemlink:" href="https://instagram.com"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="{{url_for('static', filename = 'index.js') }}"></script>
+        
+</body>
+
+
+{% endblock%}

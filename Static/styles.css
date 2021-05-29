@@ -421,3 +421,7 @@ input[type=email]{
   margin: 8px 0;
   box-sizing: border-box;
 }
+.container {
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;

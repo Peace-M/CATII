@@ -399,28 +399,7 @@ header {
 .mycontact {
 text-align: center;
 }
-input[type=text]{
-  width:200px;
-  height: 5px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-input [type=textarea] {
-  width: 200px;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  resize: none;
-}
-input[type=email]{
-  width:200px;
-  height: 5px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
+
 .container {
   margin: 0 auto;
   width: 400px;

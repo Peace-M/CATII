@@ -43,19 +43,13 @@ def add_user ():
         except:
             return "Error Submitting"
     else:
-        return render_template('contact.html')
+        return render_template('index.html')
           
-
-
-if __name__   == "__main__":
-    app.run(debug=True)      
-
-     
-
 
 
     
 
+     
 
 
 
@@ -74,3 +68,8 @@ def portfolio():
 @app.route('/portfolioII-page.html')
 def portfolioll():
     return render_template('portfolioII-page.html')
+
+
+
+if __name__   == "__main__":
+    app.run(debug=True)  
